@@ -23,3 +23,9 @@ To be able to use this automation it is essential that you have imported your ba
 ### Note
 
 It could happen that if you start a print from the micro SD and not from the Bambu Handy printing history, if the printer status sensor does not switch from ``preparing`` to ``running`` the light will not go off.
+
+## Other projects
+
+If you need custom icons for your home assistant I recommend you take a look at this project
+
+- [Custom Brand Icons](https://github.com/elax46/custom-brand-icons)
