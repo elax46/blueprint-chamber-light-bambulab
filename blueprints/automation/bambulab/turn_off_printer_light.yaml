@@ -1,0 +1,37 @@
+blueprint:
+  name: Turn off the print chamber light
+  description: This automation turns off the light of your bambulab printer when the printer goes into the running state
+  domain: automation
+  author: https://github.com/elax46
+  input:
+    sensor_status_print:
+      name: Print status sensor
+      description: Select the printing status sensor usually the sensor is of the type (sensor.printer_name_status_printing)
+      selector:
+        entity:
+          domain:
+            - sensor
+    light_print:
+      name: Printer light
+      description: Select the printing light sensor usually the sensor is of the type (light.name_printer_light_room_of_printing)
+      selector:
+        entity:
+          domain:
+            - light
+  source_url: https://github.com/elax46
+mode: single
+trigger:
+  - platform: state
+    entity_id: !input sensor_status_print
+    to: running
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+    from: prepare
+condition: []
+action:
+  - service: light.turn_off
+    target:
+      entity_id: !input light_print
+    data: {}
