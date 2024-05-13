@@ -18,7 +18,7 @@ To be able to use this automation it is essential that you have imported your ba
 
 ### Installation
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://github.com/elax46/blueprint-chamber-light-bambulab/blob/main/blueprints/automation/bambulab/turn_off_printer_light.yaml)
 
 ### Note
 
